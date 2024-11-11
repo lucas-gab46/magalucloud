@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
+    <title>Projeto PostgreSQL na Magalu Cloud</title>
+</head>
+<body>
+    <header>
+        <h1>Módulo PostgreSQL Sobrenatural</h1>
+        <p>Uma solução inovadora para gerenciar sua infraestrutura na Magalu Cloud.</p>
+    </header>
+    
+    <section id="features">
+        <h2>Características do Módulo</h2>
+        <ul>
+            <li>Provisionamento fácil e rápido de instâncias PostgreSQL</li>
+            <li>Configuração automática de backups e segurança</li>
+            <li>Suporte para múltiplas zonas de disponibilidade</li>
+            <li>Reutilização de módulos em diferentes projetos</li>
+        </ul>
+    </section>
+
+    <section id="usage">
+        <h2>Como Usar</h2>
+        <pre><code>module "my_postgres" {
+  source         = "./postgres-module"
+  instance_name  = "my-db-instance"
+  instance_class = "db.t3.micro"
+  storage_size   = 20
+  database_name  = "mydatabase"
+  db_user        = "admin"
+  db_password    = "supersecretpassword"
+  environment    = "dev"
+}</code></pre>
+    </section>
+
+    <footer>
+        <p>Desenvolvido com ❤ pela equipe Magalu Cloud.</p>
+        <button id="contact-button">Entre em Contato</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
